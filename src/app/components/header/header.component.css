@@ -25,21 +25,8 @@
   margin-left: 30px;
 }
 
-.header .header-menu {
-  float: right;
-  margin-right: 30px;
-}
 
-.header .header-menu a {
-  margin-right: 15px;
-  color: #ffffff;
-}
-
-.header .header-menu a:hover {
-  color: #3498db;
-}
-
-.title-is-1 {
+.title is-1 {
   display: flex;
   justify-content: center;
 }

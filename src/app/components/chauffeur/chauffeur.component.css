@@ -1,0 +1,37 @@
+/* BANNER */
+
+.banner {
+  margin-top: -20px;
+}
+
+.banner .banner-image {
+  position: relative;
+}
+
+.banner .banner-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 30%;
+}
+
+.banner .banner-content h1,
+.banner .banner-content h2 {
+  color: #ffffff;
+}
+
+/* ABOUT */
+
+.about .about-single-element .icon {
+  font-size: 60px;
+  text-align: center;
+}
+
+.about .about-single-element {
+  text-align: center;
+}
+
+.about .about-single-element p {
+  text-align: left;
+  margin-top: 20px;
+}

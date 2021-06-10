@@ -1,14 +1,8 @@
 <!-- HEADER -->
 <div class="row">
   <header class="header">
-      <a href="#" class="header-logo">VTC LAND</a>
-      <nav class="header-menu">
-          <a [routerLink]= "['/home']">Accueil</a>
-          <a [routerLink]= "['/']">A propos</a>
-          <a [routerLink]= "['/chauffeur']">Chauffeurs</a>
-          <a [routerLink]= "['/client']">Clients</a>
-          <a [routerLink]= "['/']">Contact</a>
-      </nav>
+      <a [routerLink]="['/home'] " class="header-logo">VTC LAND</a>
+      <app-navbar></app-navbar>
   </header>
 </div>
 
@@ -25,7 +19,7 @@
 </div>
 
 <!-- BANNER -->
-<h1 class="title-is-1"><strong>Où que vous alliez, votre sécurité est au cœur de nos priorités</strong></h1>
+<h1 class="title is-1"><strong>Où que vous alliez, votre sécurité est au cœur de nos priorités</strong></h1>
 <br>
 <hr>
 <!-- SECTION : À PROPOS -->

@@ -7,8 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { UserComponent } from './components/user/user.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  // { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'user', component: UserComponent, pathMatch: 'full'},
   { path: 'chauffeur', component: ChauffeurComponent, pathMatch: 'full'},
   { path: 'client', component: ClientComponent, pathMatch: 'full'},

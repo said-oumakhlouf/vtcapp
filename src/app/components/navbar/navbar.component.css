@@ -1,0 +1,13 @@
+.header-menu {
+  float: right;
+  margin-right: 30px;
+}
+
+.header-menu a {
+  margin-right: 15px;
+  color: #ffffff;
+}
+
+.header-menu a:hover {
+  color: #3498db;
+}

@@ -1,38 +1,49 @@
 <app-navbar></app-navbar>
 
-<div class="form-container">
-  <form [formGroup]="clientForm" #myForm class="form">
-    <mat-form-field appearance="outline">
-      <mat-label>Email</mat-label>
-      <input
-      matInput
-      class="form-control"
-      type="email"
-      placeholder="Indiquez votre email"
-      required
-      formControlName="email" />
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>Mot de passe</mat-label>
-      <input
-        matInput
-        class="form-control"
-        [type]="hide ? 'password' : 'text'"
-        required
-        placeholder="Indiquez votre password"
-        formControlName="password"
-        />
-      <button mat-icon-button matSuffix (click)="hide = !hide">
-        <mat-icon>{{ hide ? "visibility_off" : "visibility"}}</mat-icon>
-      </button>
-    </mat-form-field>
-    <button
-      class="button-connection"
-      mat-flat-button color="primary"
-      [disabled]="clientForm.invalid"
-      (click)="onConnectClick()"
-      >Connexion</button>
-  </form>
+<!-- BANNER -->
+<div class="block">
+  <div class="banner">
+      <img src="assets/img/clients.jpg" alt="personne avec mobile" class="banner-image">
+      <div class="banner-content">
+          <h1 class="title is-1">CLIENTS</h1>
+          <h2 class="subtitle">Commandez une course !</h2>
+          <button class="button is-link">Inscription !</button>
+      </div>
+  </div>
 </div>
+<!-- BANNER -->
+<h1 class="title is-1"><strong>Conduisez quand vous voulez</strong></h1>
+
+<br>
+<hr>
+<!-- SECTION : À PROPOS -->
+<div class="block">
+    <div class="container about">
+        <div class="columns">
+            <div class="column about-single-element">
+                <i class="fas fa-hourglass-half"></i>
+                <p><strong>Gagnez du temps partout, à tout moment</strong></p>
+            <p>
+                Commandez quand vous le voulez. De plus, choisissez votre chauffeurs.
+            </p>
+            </div>
+            <div class="column about-single-element">
+                <i class="fab fa-accusoft"></i>
+                <p><strong>Choisissez où vous voulez</strong></p>
+                <p>
+                    Décidez où vous commandez. Au bureau, A l'aéroport. Avec l'app Vtc Land, c'est vous qui décidez de votre horaire.
+                </p>
+            </div>
+            <div class="column about-single-element">
+                <i class="far fa-address-card"></i>
+            <p><strong>Inscrivez-vous en toute simplicité</strong></p>
+                <p>
+                    Inscrivez-vous pour avoir accès à l'app. Une fois l'activation de votre compte terminée, vous pourrez commencer à commandez votre course</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECTION : À PROPOS -->
 
 
