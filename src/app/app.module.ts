@@ -20,7 +20,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ChauffeurComponent } from './components/chauffeur/chauffeur.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { RegisterComponent } from './components/register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HeaderComponent,
     FooterComponent,
     ChauffeurComponent,
-    NavbarComponent
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
