@@ -4,6 +4,7 @@ export interface User {
   prenom: string;
   email: string;
   telephone: string;
+  password: string;
   imageUrl: string;
-  
+
 }
