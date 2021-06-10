@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<div class="form-container">
+  <form [formGroup]="clientForm" #myForm class="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input
+      matInput
+      class="form-control"
+      type="email"
+      placeholder="Indiquez votre email"
+      required
+      formControlName="email" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Mot de passe</mat-label>
+      <input
+        matInput
+        class="form-control"
+        [type]="hide ? 'password' : 'text'"
+        required
+        placeholder="Indiquez votre password"
+        formControlName="password"
+        />
+      <button mat-icon-button matSuffix (click)="hide = !hide">
+        <mat-icon>{{ hide ? "visibility_off" : "visibility"}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <button
+      class="button-connection"
+      mat-flat-button color="primary"
+      [disabled]="clientForm.invalid"
+      (click)="onConnectClick()"
+      >Connexion</button>
+  </form>
+</div>
+
+

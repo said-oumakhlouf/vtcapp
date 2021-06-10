@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-form-field,
+ .button-connection  {
+  width: 500px;
+  cursor: pointer;
+}
+
