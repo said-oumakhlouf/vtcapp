@@ -21,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ChauffeurComponent } from './components/chauffeur/chauffeur.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { RegisterComponent } from './components/register/register.component';
     FooterComponent,
     ChauffeurComponent,
     RegisterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,7 @@ import { RegisterComponent } from './components/register/register.component';
     MatButtonModule,
     MatFormFieldModule,
     MatIconModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
