@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chauffeur',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChauffeurComponent implements OnInit {
 
-  constructor() { }
+  title = 'Chauffeur'
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+
+  onRegisterClick(): void {
+    this.router.navigateByUrl('register');
+  }
+
 
 }

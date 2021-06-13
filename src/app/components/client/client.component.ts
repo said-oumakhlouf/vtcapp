@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 })
 export class ClientComponent implements OnInit {
 
+  title = 'Client'
+
   hide = true;
 
   clientForm = new FormGroup({
@@ -32,6 +34,9 @@ export class ClientComponent implements OnInit {
     console.log(result);
   }
 
+  onRegisterClick(): void {
+    this.router.navigateByUrl('register');
+  }
 
 
 }

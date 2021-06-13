@@ -1,13 +1,77 @@
+<section class="mt-4 policy-product">
+  <h1>Nos différents chauffeurs avec leurs véhicules</h1>
+  <div class="container">
+    <div class="bg-position">
+      <div class="row rounded-3">
+        <owl-carousel-o [options]="policyOptions">
+          <ng-template carouselSlide>
+            <div class="m-4 policy-p-card">
+              <div class="user">
+                <i class="fas fa-car"></i>
+              </div>
+              <div class="policy-img">
+                <img class="rounded-3" src="../assets/policy/zz.jpg" alt="zz">
+              </div>
+              <h2>La Brutale</h2>
+              <p>Pour des courses plus sportive</p>
+              <button type="button" class="btn btn-primary btn-lg">
+                <a href="" class="read-more">En savoir plus <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+              </button>
+            </div>
+          </ng-template>  
+          <ng-template carouselSlide>
+            <div class="m-4 policy-p-card">
+              <div class="user">
+                <i class="fas fa-car"></i>
+              </div>
+              <div class="policy-img">
+                <img class="rounded-3" src="../assets/policy/audi-a7.jpg" alt="zz">
+              </div>
+              <h2>La Classic</h2>
+              <p>Pour de long déplacements</p>
+              <button type="button" class="btn btn-primary btn-lg">
+                <a href="" class="read-more">En savoir plus <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+              </button> 
+            </div>
+          </ng-template>  
+          <ng-template carouselSlide>
+            <div class="m-4 policy-p-card">
+              <div class="user">
+                <i class="fas fa-car"></i>
+              </div>
+              <div class="policy-img">
+                <img class="rounded-3" src="../assets/policy/brutalcar.jpg" alt="brutal">
+              </div>
+              <h2>La Musclé</h2>
+              <p>Vous avez besoin d'un véhicule plus musclé</p>
+              <button type="button" class="btn btn-primary btn-lg">
+                <a href="" class="read-more">En savoir plus <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+              </button>
+            </div>
+          </ng-template>  
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="d-flex justify-content-center mt-5">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+ 
+  <div class="spinner-border text-dark" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+</section>
 
 <section class="mt-5">
-  <div class="containers">
     <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide><img src="../assets/img/chauffeurs.jpg" alt="chauffeurs"></ng-template>
-      <ng-template carouselSlide><img src="../assets/img/clients.jpg" alt="clients"></ng-template>
-      <ng-template carouselSlide><img src="../assets/img/mobile1.jpg" alt="mobile1"></ng-template>
-      <ng-template carouselSlide><img src="../assets/img/mobile2.jpg" alt="mobile2"></ng-template>
-      <ng-template carouselSlide><img src="../assets/img/mobile3.jpg" alt="mobile3"></ng-template>
-      <ng-template carouselSlide><img src="../assets/img/mobile4.jpg" alt="mobile4"></ng-template>
+      <ng-template carouselSlide *ngFor="let vtcArrays of vtcArray">
+        <div class="img-vtc">
+          <img src=" {{ vtcArrays.imgName }}" alt="vtc">
+        </div>
+      </ng-template>
     </owl-carousel-o>
-  </div>
 </section>

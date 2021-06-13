@@ -5,6 +5,7 @@ import { ChauffeurComponent } from './components/chauffeur/chauffeur.component';
 import { ClientComponent } from './components/client/client.component';
 import { HomeComponent } from './components/home/home.component';
 import { UserComponent } from './components/user/user.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'user', component: UserComponent, pathMatch: 'full'},
   { path: 'chauffeur', component: ChauffeurComponent, pathMatch: 'full'},
   { path: 'client', component: ClientComponent, pathMatch: 'full'},
+  { path: 'register', component: RegisterComponent, pathMatch: 'full'},
   { path: 'login', component: LoginComponent, pathMatch: 'full'},
 
 ];
