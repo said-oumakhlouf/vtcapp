@@ -22,6 +22,8 @@ import { ChauffeurComponent } from './components/chauffeur/chauffeur.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselHolderComponent } from './components/carousel-holder/carousel-holder.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,7 @@ import { LoginComponent } from './components/login/login.component';
     ChauffeurComponent,
     RegisterComponent,
     LoginComponent,
+    CarouselHolderComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { LoginComponent } from './components/login/login.component';
     MatFormFieldModule,
     MatIconModule,
     ReactiveFormsModule,
+    CarouselModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
