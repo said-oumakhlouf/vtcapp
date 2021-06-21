@@ -2,6 +2,10 @@
   height: 150px;
 }
 
+h1 {
+  color: rgb(8, 8, 8);
+}
+
 .row {
   background-color: #a8c0ff
 }
@@ -13,5 +17,5 @@
 
 .user {
   color: #375fc2;
-  font-size: 42px;
+  font-size: 32px;
 }
